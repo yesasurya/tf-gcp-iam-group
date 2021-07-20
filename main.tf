@@ -1,17 +1,17 @@
 provider "google" {
-    project = "mh-dev-320110"
+    project = "personal-320108"
     region = "asia-southeast1"
     zone = "asia-southeast1-a"
 }
 
-resource "google_cloud_identity_group" "group-example-100" {
-  display_name         = "group-example-100"
+resource "google_cloud_identity_group" "group-example-1" {
+  display_name         = "group-example-1"
   initial_group_config = "WITH_INITIAL_OWNER"
 
-  parent = "customers/C014xwqob"
+  parent = "customers/C043jufqt"
 
   group_key {
-      id = "group-example-100@testhousing.online"
+      id = "group-example-1@yesa.id"
   }
 
   labels = {
